@@ -4,10 +4,16 @@
     padding: 0;
 }
 
+
 body > header{
     background-color: #2f3640;
     padding: 16px 0;
     color: #f5f6fa
+}
+
+#menu{
+    position: fixed;
+    width: 100%
 }
 
 header .container{
@@ -28,6 +34,13 @@ header li a{
     text-decoration: none;
 
 }
+
+header li a:hover{
+    color: #cdcdcd;
+    text-decoration: underline;
+
+}
+
 
 .container {
     width: 1366px;
@@ -94,6 +107,7 @@ section h2{
 
 #sports {
     background-color: rgba(0, 255, 0, 0.1);
+    padding-top: 80px;
 }
 
 #sports .articles article a{
