@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.container {
+  border: 1px solid black;
+  display: block;
+  margin: 26px 25%;
+  padding-left: 230px;
+}
+
+#input-form, #label-form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px
+}
+
+#label-email{
+  margin-left: 70px
+}
+
+#input, button{
+  margin-left: 34px
+}
+
+#label-cpf {
+  margin-left: 124px
+}
+
+#campo-formulario, h2 {
+  margin: 16px;
+}
+
+#campo-formulario label{
+  display: block;
+}
+
+#endereco {
+  width: 354px
+}
+
+button {
+  padding: 0 50px;
+  background-color: green;
+  color: aliceblue;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
