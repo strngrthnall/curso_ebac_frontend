@@ -14,26 +14,38 @@
       <div class="col">
         <h2 class="display-7">Cadastre-se</h2>
         <form>
-          <label for="nome" class="form-label">
-            Nome completo:
-          </label>
-          <input type="text" id="nome" class="form-control form-control-sm">
-          <label for="email" class="form-label">
-            Email:
-          </label>
-          <input type="text" id="email" class="form-control form-control-sm">
-          <label for="telefone" class="form-label">
-            Telefone:
-          </label>
-          <input type="text" id="telefone" class="form-control form-control-sm"0>
+          <div>
+            <label for="nome" class="form-label">
+              Nome completo:
+            </label>
+            <input name="nome" type="text" id="nome" class="form-control form-control-sm" placeholder="Seu Nome Completo" required>
+          </div>
+          <div>
+            <label for="email" class="form-label">
+              Email:
+            </label>
+            <input name="email" type="text" id="email" class="form-control form-control-sm" placeholder="seu@email.com" required>
+          </div>
+          <div>
+            <label for="telefone" class="form-label">
+              Telefone:
+            </label>
+            <input name="telefone" type="tel" id="telefone" class="form-control form-control-sm" required>
+          </div>
           <div class="form-check form-switch">
             <label for="aceito-termos" class="form-check-label">Li e concordo com os termos do site</label>
-            <input type="checkbox" id="aceito-termos" class="form-check-input">
+            <input name="checkbox" type="checkbox" id="aceito-termos" class="form-check-input" required>
           </div>
           <button class="btn btn-success">Cadastrar</button>
         </form>
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./lib/jquery.mask.min.js"></script>
+  <script src="./lib/jquery.validate.min.js"></script>
+  <script src="./lib/messages_pt_PT.min.js"></script>
+  <script src="./lib/main.js"></script>
 </body>
 </html>

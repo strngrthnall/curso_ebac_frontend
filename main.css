@@ -10,6 +10,16 @@ body {
   padding: 16px;
   border-radius: 16px;
 }
-button, .form-check {
+button, .form-check, .form-label {
   margin-top: 8px;
+}
+
+
+#email-error, #telefone-error, #nome-error, #checkbox-error {
+  color: red;
+  font-weight: bolder;
+}
+
+.erro {
+  border: 1px solid red;
 }
