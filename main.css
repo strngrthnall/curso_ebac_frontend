@@ -1,0 +1,15 @@
+body {
+  align-items: center;
+  background-color: #c9c9c9;
+}
+
+.container {
+  max-width: 500px;
+  margin-top: 32px;
+  background-color: #3867d5;
+  padding: 16px;
+  border-radius: 16px;
+}
+button, .form-check {
+  margin-top: 8px;
+}
