@@ -1,0 +1,84 @@
+@use 'config/reset'
+@use 'config/variaveis'
+
+@function espacamento($times: 1)
+  @return calc(8px * $times)
+
+
+body
+  background-color: variaveis.$corDeFundo
+
+li
+  list-style: none
+
+.container
+  max-width: 1024px
+  width: 100%
+  margin: 0 auto
+
+header
+  background-color: variaveis.$corPrincipal
+  position: sticky
+  top: 0
+  left: 0
+
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: espacamento(2) 0
+
+.menu
+  display: flex
+
+  li
+    font-weight: bold
+    margin-left: espacamento(3)
+    
+    a
+      color: #fff
+      text-decoration: none
+
+section
+  padding: espacamento(7) 0
+
+.products
+  margin-top: espacamento(5)
+  display: grid
+  grid-template-columns: repeat(3, 32.66%)
+  column-gap: 1%
+  row-gap: 4%
+  width: 100%
+
+.product-item
+  img
+    width: 100%
+    border-radius: espacamento(2)
+
+.product-button
+  display: block
+  background-color: variaveis.$corBotao
+  color: #fff
+  text-align: center
+  padding: espacamento() 0
+  border-radius: espacamento()
+  margin-top: espacamento()
+  text-decoration: none
+
+  &:hover
+    background-color: lighten(variaveis.$corBotao, 5%)
+
+@media screen and (max-width: variaveis.$tablet)
+  .container
+    max-width: 80%
+  
+  .products
+    grid-template-columns: repeat(2, 48.5%)
+    column-gap: 3%
+
+@media screen and (max-width: variaveis.$mobile)
+  .products
+    display: block
+  
+  .product-item
+    margin-bottom: espacamento(4)
