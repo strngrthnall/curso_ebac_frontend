@@ -1,6 +1,14 @@
 $(document).ready(()=>{
   $('#pesquisa-btn').click((event)=>{
-    const user = $('#username').val()
+    var user = $('#username').val()
+    const containsAt = user.indexOf('@') !== -1
+
+    if(containsAt) {
+      user = user.slice(1)
+    } 
+
+    console.log(user)
+
     const endpoint = `https://api.github.com/users/${user}`
 
     fetch(endpoint).then((resposta)=>{
@@ -23,6 +31,8 @@ $(document).ready(()=>{
       $('#seguindo').text(following)
       $('#seguidores').text(followers)
       $('#repositorios').text(repos)
+    }).catch((erro) => {
+      alert("Ocorreu um erro ao procurar o usuário.")
     })
   })
 })
