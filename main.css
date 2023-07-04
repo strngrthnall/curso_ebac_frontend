@@ -1,5 +1,6 @@
 :root {
-    --header-color: #01a3a4;
+    --header-color: #1d4d4d;
+    --button-color: #278d8d;
     --bg-color: #eee;
 }
 
@@ -12,7 +13,7 @@
 }
 
 body {
-    background-color: var(--bg-color);;
+    background-color: var(--bg-color);
 }
 
 .container {
@@ -69,4 +70,19 @@ header .container {
 
 .numbers-item h4 {
     font-size: .3em;
+}
+
+.pesquisa {
+    padding: 16px 8px;
+    text-align: left;
+}
+
+.pesquisa-input {
+    height: 35px;
+}
+
+.search-button {
+    padding: 4px 8px;
+    background-color: var(--button-color);
+    
 }
