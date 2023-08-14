@@ -1,0 +1,25 @@
+{
+  "name": "curso_ebac_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --watch -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strngrthnall/curso_ebac_frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strngrthnall/curso_ebac_frontend/issues"
+  },
+  "homepage": "https://github.com/strngrthnall/curso_ebac_frontend#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10"
+  }
+}
